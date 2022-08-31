@@ -30,14 +30,14 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   while(!(Serial.available()>0));
-  int pwm=Serial.parseInt();
+  int pwmdata=Serial.parseInt();
  
   for(int i=0;i<16;i++)
   {
-    pwm.setPWM(i, 0, pwm);
+    pwm.setPWM(i, 0, pwmdata);
   }
-  pwm1.setPWM(0, 0, pwm);
-  pwm1.setPWM(1, 0, pwm);
+  pwm1.setPWM(0, 0, pwmdata);
+  pwm1.setPWM(1, 0, pwmdata);
   delay(500);
   
 }
