@@ -20,8 +20,8 @@ void setup()
 {
     Serial.begin(9600);
     delay(10);
-    pinMode(16, OUTPUT);
-    digitalWrite(16, 0);
+    pinMode(0, OUTPUT);
+    digitalWrite(0, 0);
     WiFi.begin(ssid, password);
  
     while (WiFi.status() != WL_CONNECTED)
@@ -92,6 +92,6 @@ void blink()
     {
         previousMillis = millis();
         currstate = 1 - currstate;
-        digitalWrite(16, currstate);
+        digitalWrite(0, currstate);
     }
 }
