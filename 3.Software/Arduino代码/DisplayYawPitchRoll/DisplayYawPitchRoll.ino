@@ -80,9 +80,9 @@ void setup() {
  
     // wait for ready
     Serial.println(F("\nSend any character to begin DMP programming and demo: "));
-    while (Serial.available() && Serial.read()); // empty buffer
-    while (!Serial.available());                 // wait for data
-    while (Serial.available() && Serial.read()); // empty buffer again
+//    while (Serial.available() && Serial.read()); // empty buffer
+//    while (!Serial.available());                 // wait for data
+//    while (Serial.available() && Serial.read()); // empty buffer again
  
     // load and configure the DMP
     Serial.println(F("Initializing DMP..."));
@@ -132,7 +132,7 @@ void loop() {
             
             TFT.setCursor(10, 10, 4);//前俩参数是位置(横纵坐标),第三个参数是字体大小
             TFT.setTextColor(TFT_WHITE, TFT_BLACK);
-            TFT.println("R:");
+            TFT.println("Y:");
             TFT.setCursor(50, 10, 4);
             TFT.println(ypr[0] * 180/M_PI);
  
@@ -144,7 +144,7 @@ void loop() {
  
             TFT.setCursor(10, 70, 4);//前俩参数是位置(横纵坐标),第三个参数是字体大小
             TFT.setTextColor(TFT_WHITE, TFT_BLACK);
-            TFT.println("Y:");
+            TFT.println("R:");
             TFT.drawFloat(ypr[2] * 180/M_PI, 3, 50, 70);               // Draw float using current font
 //            TFT.setCursor(50, 70, 4);
 //            TFT.println(ypr[2] * 180/M_PI);
