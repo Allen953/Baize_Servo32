@@ -1,6 +1,7 @@
 # Baize_ServoDriver_esp32
 
 该机器人开发板的用法和介绍以CSDN的文章为准：https://blog.csdn.net/qqliuzhitong/article/details/126445164
+
 最新的代码以本仓库为准，本仓库总是存放最新代码，CSDN的代码可能存在滞后。
 
 出于制作机器人的需要，设计了这块儿32路舵机驱动板，板子可以驱动从5~12V的pwm舵机，适应电压范围较宽，所以用起来会非常方便。
