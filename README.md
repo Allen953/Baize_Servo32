@@ -1,5 +1,7 @@
 # Baize_ServoDriver_esp32
 
+$\color{red}{DIY交流群：902595482。}$设计这块板子的初衷是做六足机器人，机械臂用的，所以就在一个群里了。
+
 该机器人开发板的用法和介绍以CSDN的文章为准：https://blog.csdn.net/qqliuzhitong/article/details/126445164
 
 最新的代码以本仓库为准，本仓库总是存放最新代码，CSDN的代码可能存在滞后。
